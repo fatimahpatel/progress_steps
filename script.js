@@ -1,12 +1,15 @@
 const progress = document.getElementById('progress');
 const prev = document.getElementById('previous');
 const next = document.getElementById('next');
-const circle = document.querySelectorAll('.circle');
+const circles = document.querySelectorAll('.circle');
 
 // this represents whichever circle is active
 let currentActive = 1;
 
 next.addEventListener('click', ()=>{
     currentActive++;
+    if(currentActive > circles.length){
+        currentActive = circles.length
+    }
     console.log(currentActive)
 })
