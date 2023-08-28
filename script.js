@@ -11,7 +11,6 @@ next.addEventListener('click', ()=>{
     if(currentActive > circles.length){
         currentActive = circles.length;
     }
-    console.log(currentActive);
 })
 
 prev.addEventListener('click', ()=>{
@@ -19,5 +18,4 @@ prev.addEventListener('click', ()=>{
     if(currentActive < 1){
         currentActive = 1;
     }
-    console.log(currentActive);
 })
