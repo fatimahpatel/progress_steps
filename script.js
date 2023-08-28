@@ -24,6 +24,11 @@ prev.addEventListener('click', ()=>{
     update()
 })
 
+//when update function is called
+//it will loop through the circles NodeList
+//for each object, it would pass through the arrow function
+//if the index of the object is less than currentActive (which is incremented) before update()
+//it would add update the object to active class
 function update(){
     circles.forEach((circle, index) => {
         if(index < currentActive){
@@ -31,6 +36,7 @@ function update(){
         }else{
             circle.classList.remove('active')
         }
+
 
     })
 }
