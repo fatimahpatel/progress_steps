@@ -9,7 +9,15 @@ let currentActive = 1;
 next.addEventListener('click', ()=>{
     currentActive++;
     if(currentActive > circles.length){
-        currentActive = circles.length
+        currentActive = circles.length;
     }
-    console.log(currentActive)
+    console.log(currentActive);
+})
+
+prev.addEventListener('click', ()=>{
+    currentActive--;
+    if(currentActive < 1){
+        currentActive = 1;
+    }
+    console.log(currentActive);
 })
