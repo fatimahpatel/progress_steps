@@ -90,3 +90,12 @@ body{
 .button:active{
     transform: scale(0.98)
 }
+
+.button:focus{
+    outline: 0;
+}
+
+.button:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
