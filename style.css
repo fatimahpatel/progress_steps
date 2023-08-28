@@ -65,3 +65,7 @@ body{
     border: 3px solid #e0e0e0;
     transition: .4s ease;
 }
+
+.circle.active{
+    border-color: palevioletred
+}
